@@ -42,7 +42,7 @@ Documentation
 · Mobile App Setup
 
 
-##Applications
+Applications
 
 · Web App: https://cbl.ag
 
