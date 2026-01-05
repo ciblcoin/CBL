@@ -34,11 +34,15 @@ npm run deploy:devnet
 Documentation
 
 · API Documentation
+
 · Smart Contract Docs
+
 · SDK Documentation
+
 · Mobile App Setup
 
-Applications
+
+##Applications
 
 · Web App: https://cbl.ag
 
