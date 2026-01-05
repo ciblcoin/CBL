@@ -1,0 +1,56 @@
+{
+  "name": "cbl-dex-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "build:android": "cd android && ./gradlew assembleRelease",
+    "build:ios": "cd ios && xcodebuild -workspace CBLDex.xcworkspace -scheme CBLDex -configuration Release",
+    "publish:android": "cd android && ./gradlew publishRelease",
+    "publish:ios": "fastlane ios beta"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.0",
+    "react-native-solana-wallet": "^1.0.0",
+    "@cbl/dex-sdk": "file:../../sdk",
+    "@react-navigation/native": "^6.1.0",
+    "@react-navigation/stack": "^6.3.0",
+    "react-native-safe-area-context": "^4.6.0",
+    "react-native-screens": "^3.22.0",
+    "react-native-gesture-handler": "^2.12.0",
+    "react-native-reanimated": "^3.3.0",
+    "react-native-vector-icons": "^10.0.0",
+    "react-native-webview": "^13.2.0",
+    "axios": "^1.5.0",
+    "react-native-crypto": "^2.2.0",
+    "react-native-randombytes": "^3.6.1",
+    "react-native-keychain": "^8.1.0",
+    "react-native-biometrics": "^3.0.0",
+    "react-native-push-notification": "^8.1.1",
+    "react-native-qrcode-svg": "^6.2.0",
+    "react-native-share": "^9.0.0",
+    "react-native-svg": "^13.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/runtime": "^7.22.0",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "babel-jest": "^29.6.0",
+    "eslint": "^8.45.0",
+    "jest": "^29.6.0",
+    "metro-react-native-babel-preset": "0.76.0",
+    "react-test-renderer": "18.2.0",
+    "typescript": "^5.1.0",
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
