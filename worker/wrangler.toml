@@ -1,0 +1,23 @@
+name = "cbl-dex-api"
+type = "javascript"
+account_id = "your-cloudflare-account-id"
+workers_dev = true
+compatibility_date = "2024-01-01"
+
+[env.production]
+name = "cbl-dex-api-production"
+route = "api.cbl.ag/*"
+zone_id = "your-zone-id"
+
+[vars]
+SOLANA_RPC_URL = "https://api.mainnet-beta.solana.com"
+REDIS_URL = "your-redis-url"
+API_KEY = "your-api-key"
+
+[triggers]
+crons = ["* * * * *"]
+
+[[rules]]
+type = "WorkerScript"
+globs = ["**/*.ts"]
+fallthrough = true
