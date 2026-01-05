@@ -41,9 +41,13 @@ Documentation
 Applications
 
 · Web App: https://cbl.ag
+
 · Android: Google Play Store
+
 · iOS: App Store
+
 · Windows: Download
+
 
 API Access
 
