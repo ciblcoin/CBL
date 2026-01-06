@@ -66,3 +66,48 @@ License
 MIT License
 
 ```
+
+
+CBL/
+├── README.md
+├── package.json
+├── tsconfig.json
+├── .gitignore
+├── .env.example
+├── programs/                    # Solana Smart Contracts
+│   └── cbl-dex/
+│       ├── src/
+│       │   ├── lib.rs          # Main contract
+│       │   ├── instructions/   # Contract instructions
+│       │   ├── state/         # State structs
+│       │   └── errors.rs      # Error definitions
+│       ├── Cargo.toml
+│       └── Xargo.toml
+├── apps/                       # Applications
+│   ├── web/                    # Web interface
+│   ├── android/               # Android app
+│   ├── ios/                   # iOS app
+│   └── desktop/               # Windows desktop app
+├── worker/                    # Cloudflare Worker API
+│   ├── src/
+│   │   ├── index.ts
+│   │   ├── cache.ts
+│   │   └── types.ts
+│   └── wrangler.toml
+├── sdk/                       # JavaScript/TypeScript SDK
+│   ├── src/
+│   │   ├── client.ts
+│   │   ├── api.ts
+│   │   └── types.ts
+│   └── package.json
+├── scripts/                   # Deployment scripts
+│   ├── deploy.ts
+│   ├── initialize-pools.ts
+│   └── setup-test-tokens.ts
+├── tests/                     # Tests
+│   ├── cbl-dex.test.ts
+│   └── integration.test.ts
+└── docs/                     # Documentation
+    ├── api.md
+    ├── setup.md
+    └── contributing.md
