@@ -1,42 +1,23 @@
-# Dependencies
+/nbproject/
+/.idea/*
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
 node_modules/
-*.log
-
-# Build outputs
-dist/
-build/
-.target/
-.deploy/
-
-# Environment variables
-.env
-.env.local
-.env.development
-.env.production
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Wallet files
-*.json
-!package.json
-
-# Mobile
-apps/mobile/android/build/
-apps/mobile/ios/build/
-apps/mobile/android/app/build/
-apps/mobile/ios/Pods/
-
-# Desktop
-apps/desktop/dist/
-apps/desktop/release-builds/
-
-# Solana
-test-ledger/
+vendor/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.egg-info/
+.tox/
+.bundle/
+Pods/
+.gradle/
+.terraform/
+bower_components/
+.cache/
+coverage/
